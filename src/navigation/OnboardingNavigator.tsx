@@ -6,6 +6,7 @@ import { SIGNUP_ROUTES } from './helpers/routes'
 import { RouteProp } from '@react-navigation/native'
 
 import WelcomeScreen from 'screens/Onboarding/WelcomeScreen'
+import SignIn from 'screens/Onboarding/SignIn'
 
 type OnBoardingStackParamList = {
   [SIGNUP_ROUTES.WELCOME]: {
@@ -32,6 +33,7 @@ const OnboardingNavigator = () => (
     headerMode="none"
   >
     <Stack.Screen name={SIGNUP_ROUTES.WELCOME} component={WelcomeScreen} />
+    <Stack.Screen name={SIGNUP_ROUTES.SIGNIN} component={SignIn} />
   </Stack.Navigator>
 )
 
